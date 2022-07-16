@@ -51,7 +51,6 @@ You can update this form if any changes are made and lastly confirm your order t
 * [Easy Tutorials](https://youtu.be/yQimoqo0-7g)
 * [hyperionDev](https://www.hyperiondev.com)
 * [StackOverFlow](https://stackoverflow.com)
-* [Tech2](https://youtu.be/37KohMnIP7Q)
 * [Telmo Sampaio](https://youtu.be/B20Getj_Zk4)
 * [Unsplash](https://unsplash.com)
 * [W3Schools](https://www.w3schools.com)
