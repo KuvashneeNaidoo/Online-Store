@@ -21,14 +21,13 @@ The project includes a Home, About Us, Catalogue, Reviews and Shopping Cart page
 ## Installation
 The git clone command can be used to install this respository to your local machine.
 
-* Clone a copy using git
+* First, create a directory using the cd command 
+
+* In your terminal or command promot, clone the repository by copying the link below
 ```git clone
 https://github.com/KuvashneeNaidoo/Online-Store.git 
 ``` 
-* Install NPM packages
-```
-npm install
-```
+
 
 ## Usage
 * On the Home page, you can click on the shop button which will redirect you to the catalogue page to view all products.
