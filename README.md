@@ -19,12 +19,14 @@ The project includes a Home, About Us, Catalogue, Reviews and Shopping Cart page
 </details>
 
 ## Installation
+The git clone command can be used to install this respository to your local machine.
+
 * Clone a copy using git
-```sh git clone
+```git clone
 https://github.com/KuvashneeNaidoo/Online-Store.git 
 ``` 
 * Install NPM packages
-```sh
+```
 npm install
 ```
 
@@ -46,7 +48,10 @@ You can update this form if any changes are made and lastly confirm your order t
 ![Order summary](https://user-images.githubusercontent.com/105747929/179355952-d5c6a5a1-f472-43c5-8c6b-d42cddef6cf1.png)
 
 ## Credits
-* [Unsplash] 
-(https://unsplash.com)
-* 
-
+* [Easy Tutorials](https://youtu.be/yQimoqo0-7g)
+* [hyperionDev](https://www.hyperiondev.com)
+* [StackOverFlow](https://stackoverflow.com)
+* [Tech2](https://youtu.be/37KohMnIP7Q)
+* [Telmo Sampaio](https://youtu.be/B20Getj_Zk4)
+* [Unsplash](https://unsplash.com)
+* [W3Schools](https://www.w3schools.com)
