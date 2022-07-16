@@ -1,0 +1,268 @@
+<!-- Catalogue Page - HTML - Capstone Project II-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--Downloaded the bootstrap code here: https://getbootstrap.com/docs/4.1/getting-started/introduction/#css-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/b317f3fdb7.js" crossorigin="anonymous"></script>
+    <!--Font Awesome link-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> <!-- jQuery library-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <!--Bootstrap icon used for shopping cart-->
+    <title>Catalogue</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+
+  </head>
+
+  <body>
+
+    <!--Navigation: Start-->
+    <nav class="navbar navbar-expand-lg navbar-light py-3 fixed-top">
+      <div class="container">
+        <a href="index.html">
+          <img src="images/logo.png" alt="logo" width="50px">
+        </a>
+        <button class="navbar-toggler" type="button" bake-toggle="collapse" bake-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span id="bar-icon" class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="AboutUs.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Catalogue.html">Catalogue</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Reviews.html">Reviews</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="ContactUs.html">Contact Us</a>
+            </li>
+            <li class="nav-item">
+            <li><a href="Shoppingcart.html" class="button" id="cart-button">
+                <i class="bi bi-cart2" id="cart"></i>
+                <span class="badge badge-warning" id="navBasket" onchange="countBasket()">0</span>
+                <!-- The shopping cart button will show the user the number of items they have added to their basket. -->
+              </a>
+        </div>
+        </li>
+      </div>
+      </div>
+    </nav>
+    <!--Navigation: End-->
+
+    <!--A heading section to introduce the user to the respective page topic-->
+    <section id="product" class="my-5 py-5">
+      <div class="container text-center mt-5 py-5">
+        <h3 class="font-weight-bold">Shop Now!</h3>
+        <hr class="mx-auto">
+        <p>Take a look at our wide selection of baked goods, tools and colorful toppings!</p>
+      </div>
+
+      <!--8 products from each category (baking tools, desserts and toppings) are displayed here (4 products in each of the 2 rows).
+      Below each product image, the user will see the product name, price, star rating, functional "add to cart" and "view more" button-->
+      <div class="row mx-auto container">
+        <div class="product text-center col-lg-3 col-md-4 col-12">
+          <img src="images/dessert/dessert1.jpg" alt="lemoncake" class="img-fluid">
+          <div class="star">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <h5 class="product-name">Lemon Cake</h5>
+          <h4 class="product-price">R350.00</h4>
+          <button class="view-btn"><a href="lemoncake.html">View More</a></button>
+          <button onclick="addToBasket(this)" bake-id="LC657" bake-name="Lemon Cake" bake-price="350.00"
+            bake-image="images/dessert/dessert1.jpg"><i class="bi bi-cart2"></i> Add To
+            Cart</button>
+        </div>
+
+        <div class="product text-center col-lg-3 col-md-4 col-12">
+          <img src="images/dessert/dessert2.jpg" alt="fruitpastries" class="img-fluid">
+          <div class="star">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <h5 class="product-name">Fruit Pastries</h5>
+          <h4 class="product-price">R120.00</h4>
+          <button class="view-btn"><a href="fruitpastries.html">View More</a></button>
+          <button onclick="addToBasket(this)" bake-id="FP894" bake-name="Fruit Pastries" bake-price="120.00"
+            bake-image="images/dessert/dessert2.jpg"><i class="bi bi-cart2"></i> Add To
+            Cart</button>
+        </div>
+
+        <div class="product text-center col-lg-3 col-md-4 col-12">
+          <img src="images/dessert/dessert3.jpg" alt="Strawberry Cake" class="img-fluid">
+          <div class="star">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+          <h5 class="product-name">Strawberry Cake</h5>
+          <h4 class="product-price">R400.00</h4>
+          <button class="view-btn"><a href="strawberrycake.html">View More</a></button><br>
+          <button onclick="addToBasket(this)" bake-id="SC346" bake-name="Strawberry Cake" bake-price="400.00"
+            bake-image="images/dessert/dessert3.jpg"><i class="bi bi-cart2"></i> Add To
+            Cart</button>
+        </div>
+
+        <div class="product text-center col-lg-3 col-md-4 col-12">
+          <img src="images/dessert/dessert4.jpg" alt="Chocolate Bundt Cake" class="img-fluid">
+          <div class="star">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <h5 class="product-name">Chocolate Bundt Cake</h5>
+          <h4 class="product-price">R150.00</h4>
+          <button class="view-btn"><a href="chocolatebundtcake.html">View More</a></button>
+          <button onclick="addToBasket(this)" bake-id="CB893" bake-name="Chocolate Bundt Cake" bake-price="150.00"
+            bake-image="images/dessert/dessert4.jpg"><i class="bi bi-cart2"></i> Add To
+            Cart</button>
+        </div>
+
+        <div class="product text-center col-lg-3 col-md-4 col-12">
+          <img src="images/topping/topping1.jpg" alt="Candied Speckled Eggs" class="img-fluid">
+          <div class="star">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+          <h5 class="product-name">Candied Speckled Eggs</h5>
+          <h4 class="product-price">R80.00</h4>
+          <button class="view-btn"><a href="candiedspeckledeggs.html">View More</a></button>
+          <button onclick="addToBasket(this)" bake-id="CS906" bake-name="Candied Speckled Eggs" bake-price="80.00"
+            bake-image="images/topping/topping1.jpg"><i class="bi bi-cart2"></i> Add To
+            Cart</button>
+        </div>
+
+        <div class="product text-center col-lg-3 col-md-4 col-12">
+          <img src="images/topping/topping2.jpg" alt="Jimmies Sprinkles" class="img-fluid">
+          <div class="star">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <h5 class="product-name">Jimmies Sprinkles</h5>
+          <h4 class="product-price">R70.00</h4>
+          <button class="view-btn"><a href="jimmiessprinkles.html">View More</a></button>
+          <button onclick="addToBasket(this)" bake-id="JS476" bake-name="Jimmies Sprinkles" bake-price="70.00"
+            bake-image="images/topping/topping2.jpg"><i class="bi bi-cart2"></i> Add To
+            Cart</button>
+        </div>
+
+        <div class="product text-center col-lg-3 col-md-4 col-12">
+          <img src="images/tools/tool2.jpg" alt="Designer Rolling Pin" class="img-fluid">
+          <div class="star">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <h5 class="product-name">Designer Rolling Pin</h5>
+          <h4 class="product-price">R300.00</h4>
+          <button class="view-btn"><a href="designerrollingpin.html">View More</a></button>
+          <button onclick="addToBasket(this)" bake-id="DR568" bake-name="Designer Rolling Pin" bake-price="300.00"
+            bake-image="images/tools/tool2.jpg"><i class="bi bi-cart2"></i> Add To Cart</button>
+        </div>
+
+        <div class="product text-center col-lg-3 col-md-4 col-12">
+          <img src="images/tools/tool1.jpg" alt="Cookie Cutters" class="img-fluid">
+          <div class="star">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <h5 class="product-name">Cookie Cutters</h5>
+          <h4 class="product-price">R280.00</h4>
+          <button class="view-btn"><a href="cookiecutters.html">View More</a></button>
+          <button onclick="addToBasket(this)" bake-id="CC782" bake-name="Cookie Cutters" bake-price="280.00"
+            bake-image="images/tools/tool1.jpg"><i class="bi bi-cart2"></i> Add To Cart</button>
+        </div>
+      </div>
+      </div>
+    </section>
+
+    <!-- Footer Section: Start -->
+    <!-- The footer section includes payment options(with links), product categories, contact details, social media links as well as a copyright notice at the end-->
+    <footer class="mt-3 py-2">
+      <div class="row container mx-auto pt-5">
+        <div class="footer-one col-lg-3 col-md-6 col-12">
+        </div class="footer-one mt-5">
+        <div class="row container mx-auto">
+          <div class="col-lg-3 col-md-6 col-12 mb-4">
+            <h5 class="pb-2">Payment Options</h5>
+            <a href="https://accounts.google.com/"><i class="fa-brands fa-google-pay"></i></a>
+            <a href="https://www.paypal.com/za/signin"><i class="fa-brands fa-cc-paypal"></i></a>
+            <a href="https://www.apple.com/za/apple-pay/"><i class="fa-brands fa-apple-pay"></i></a>
+          </div>
+          <div class="footer-one col-lg-3 col-md-6 col-12">
+            <h5 class="pb-2">Featured</h5>
+            <ul class="list-unstyled">
+              <li><a href="Catalogue.html">Shop All</a></li>
+              <li><a href="Catalogue.html">Baking Tools</a></li>
+              <li><a href="Catalogue.html">Desserts</a></li>
+              <li><a href="Catalogue.html">Toppings</a></li>
+            </ul>
+          </div>
+          <div class="footer-one col-lg-3 col-md-6 col-12 mb-3">
+            <h5 class="pb-2">Contact Us</h5>
+            <h6>Address</h6>
+            <p>123 Street</p>
+            <h6>Phone</h6>
+            <p>031 000-0000</p>
+            <h6>Email</h6>
+            <p>info@somethingsweet.com</p>
+          </div>
+
+          <div class="footer-one col-lg-3 col-md-6 col-12 mb-3">
+            <h5 class="pb-2">Follow Us</h5>
+            <div class="row">
+              <a href="https://facebook.com"><i class="fa-brands fa-facebook"></i></a>
+              <a href="https://twitter.com"><i class="fa-brands fa-twitter"></i></a>
+              <a href="https://instagram.com"><i class="fa-brands fa-instagram"></i></a>
+              <a href="https://tiktok.com"><i class="fa-brands fa-tiktok"></i></a>
+              <a href="https://linkedin.com"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+      </div class="copyright mt-5">
+      <div class="container col-lg-4 col-md-6 col-12 text-nowrap">
+        <p>Copyright 2022. Something Sweet. All Rights Reserved</p>
+      </div>
+    </footer>
+    <!-- Footer Section: End -->
+
+    <!-- Script element pointing to the Javascript file-->
+    <script type="text/javascript" src="main.js"></script>
+
+  </body>
+
+</html>

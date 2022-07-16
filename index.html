@@ -1,0 +1,209 @@
+<!-- Index/Home - HTML - Capstone Project II-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--Downloaded the bootstrap code here: https://getbootstrap.com/docs/4.1/getting-started/introduction/#css-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/b317f3fdb7.js" crossorigin="anonymous"></script>
+    <!--Font Awesome link-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> <!-- jQuery library-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <!--Bootstrap icon used for shopping cart-->
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+
+    <!-- Internal CSS styles to display the background image section of the home page -->
+    <style>
+      .home {
+        background-image: url(images/background1.jpg);
+        width: 100%;
+        height: 100vh;
+        background-size: cover;
+        background-position: top center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+      }
+
+    </style>
+
+  </head>
+
+  <body>
+
+    <!--Navigation: Start-->
+    <nav class="navbar navbar-expand-lg navbar-light py-3 fixed-top">
+      <div class="container">
+        <a href="index.html">
+          <img src="images/logo.png" alt="logo" width="50px">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span id="bar-icon" class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="AboutUs.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Catalogue.html">Catalogue</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Reviews.html">Reviews</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="ContactUs.html">Contact Us</a>
+            </li>
+            <li class="nav-item">
+            <li><a href="ShoppingCart.html" class="button" id="cart-button">
+                <i class="bi bi-cart2" id="cart"></i>
+                <span class="badge badge-warning" id="navBasket" onchange="countBasket()">0</span>
+                <!--the onchange="countBasket() displays the number of items in the basket and starts off with 0"-->
+              </a>
+        </div>
+        </li>
+      </div>
+      </div>
+    </nav>
+    <!--Navigation: End-->
+
+    <!-- Home: Start-->
+    <section class="home" id="home">
+      <div class="container">
+        <!-- The .container class holds rows and columns together on the page so all elements align well.-->
+        <h1>The Best Desserts For Any Occasion</h1>
+        <p>From Desserts to Baking Tools and More!</p>
+      </div>
+    </section>
+    <!-- Bootstrap introduces classes for margins (mt, mb, ml, mr, my) and padding (p-3)-->
+    <!-- Home: End-->
+
+    <!-- Categories: Start
+    Displays 3 categories (Baking Tools, Desserts and Toppings)
+    The user is redirected to the catalogue page if he/she clicks on the shop button-->
+    <section id="category" class="category w-100% py-5">
+      <div class="row p-0 m-0">
+        <div class="item col-lg-4 col-md-12 col-12 p-0">
+          <img src="images/category/category1.jpg" id="image1" alt="designer SMEG stand mixer" class="img-fluid">
+          <div class="details">
+            <h2>Baking Tools</h2>
+            <button class="button text-uppercase"><a href="Catalogue.html">Shop</a></button>
+          </div>
+        </div>
+        <div class="item col-lg-4 col-md-12 col-12 p-0">
+          <img src="images/category/category2.jpg" alt="top view of sliced chocolate cake" class="img-fluid">
+          <div class="details">
+            <h2>Desserts</h2>
+            <button class="button text-uppercase"><a href="Catalogue.html">Shop</a></button>
+          </div>
+        </div>
+        <div class="item col-lg-4 col-md-12 col-12 p-0">
+          <img src="images/category/category3.jpg" alt="colorful smarties" class="img-fluid">
+          <div class="details">
+            <h2>Toppings</h2>
+            <button class="button text-uppercase"><a href="Catalogue.html">Shop</a></button>
+          </div>
+        </div>
+      </div>
+      <!-- Categories: End-->
+
+      <!-- Footer Section: Start -->
+      <!-- The footer section includes payment options(with links), product categories, contact details, social media links as well as a copyright notice at the end-->
+      <footer class="mt-3 py-5">
+        <div class="row container mx-auto pt-5">
+          <div class="footer-one col-lg-3 col-md-6 col-12">
+          </div class="footer-one mt-5">
+          <div class="row container mx-auto">
+            <div class="col-lg-3 col-md-6 col-12 mb-4">
+              <h5 class="pb-2">Payment Options</h5>
+              <a href="https://accounts.google.com/"><i class="fa-brands fa-google-pay"></i></a>
+              <a href="https://www.paypal.com/za/signin"><i class="fa-brands fa-cc-paypal"></i></a>
+              <a href="https://www.apple.com/za/apple-pay/"><i class="fa-brands fa-apple-pay"></i></a>
+            </div>
+            <div class="footer-one col-lg-3 col-md-6 col-12">
+              <h5 class="pb-2">Featured</h5>
+              <ul class="list-unstyled">
+                <li><a href="Catalogue.html">Shop All</a></li>
+                <li><a href="Catalogue.html">Baking Tools</a></li>
+                <li><a href="Catalogue.html">Desserts</a></li>
+                <li><a href="Catalogue.html">Toppings</a></li>
+              </ul>
+            </div>
+            <div class="footer-one col-lg-3 col-md-6 col-12 mb-3">
+              <h5 class="pb-2">Contact Us</h5>
+              <h6>Address</h6>
+              <p>123 Street</p>
+              <h6>Phone</h6>
+              <p>031 000-0000</p>
+              <h6>Email</h6>
+              <p>info@somethingsweet.com</p>
+            </div>
+
+            <div class="footer-one col-lg-3 col-md-6 col-12 mb-3">
+              <h5 class="pb-2">Follow Us</h5>
+              <div class="row">
+                <a href="https://facebook.com"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://twitter.com"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://instagram.com"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://tiktok.com"><i class="fa-brands fa-tiktok"></i></a>
+                <a href="https://linkedin.com"><i class="fa-brands fa-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+        </div class="copyright mt-5">
+        <div class="container col-lg-4 col-md-6 col-12 text-nowrap">
+          <p>Copyright 2022. Something Sweet. All Rights Reserved</p>
+        </div>
+      </footer>
+      <!-- Footer Section: End -->
+
+      <!-- Script element pointing to the Javascript file-->
+      <script type="text/javascript" src="main.js"></script>
+
+  </body>
+
+</html>
+
+<!--HTML References:
+1. Bootstrap. n.d. Layout, Content, Components, Utilities, Migration. Retrieved 8 July 2022, from
+https://getbootstrap.com
+2. Box Shadow CSS Generator. n.d. Box Shadow. Retrieved 8 July 2022, from
+https://cssgenerator.org/box-shadow-css-generator.html
+3. Easy Tutorials. 2021. How To Make Ecommerce Website Using HTML and CSS Step By Step | Create e-commerce Website.
+Retrieved 8 July 2022, from https://youtu.be/yQimoqo0-7g
+
+(The knowledge I gained in task 7 was applied throughout the HTML files in this Capstone Project.) 
+4. Kuvashnee Naidoo. 2022. HyperionDev Task 7: Capstone Project I. Retrieved 9 July 2022, from https://www.dropbox.com/sh/q7gphdz0jef0qlh/AADE5BYZcWpr53qCUQJU5tINa?dl=0
+
+5. Logo. Retrieved 8 July 2022, from https://canva.com
+6. Tech2. 2021. Build Ecommerce Website With HTML CSS JavaScript | Full Responsive e-commerce Website. Retrieved 8 July
+2022, from https://youtu.be/37KohMnIP7Q
+7. Unsplash. 2021. Images by Diana Polekhina.Retrieved 8 July 2022, from https://unsplash.com/photos/qsTJXB6zTLg
+8. Unsplash. 2021. Images by Sharon McCutcheon. Retrieved 8 July 2022, from https://unsplash.com/photos/YaajxnfGeCk
+9. Unsplash. 2017. Images by Annie Spratt. Retrieved 8 July 2022, from https://unsplash.com/photos/-KKLWDAgj2Q
+10. Unsplash. 2021. Images by Behnam Norouzi. Retrieved 8 July 2022, from https://unsplash.com/photos/UDJPrpY5YGA
+11. Unsplash. 2019. Images by Rumman Amin. Retrieved 8 July 2022, from https://unsplash.com/photos/eIqO4P50MeY
+12. Unsplash. 2020. Images by Markus Winkler. Retrieved 8 July 2022, from https://unsplash.com/photos/aY-IFQAIrxs
+13. Unsplash. 2020. Images by Uliana Kopanytsia. Retrieved 8 July 2022, from https://unsplash.com/photos/8ZpCvr9-ua4
+14. Unsplash. 2019. Images by Heather Gill. Retrieved 8 July 2022, from https://unsplash.com/photos/ruQszcjrHBs
+15. Unsplash. 2018. Images by Jordane Mathieu. Retrieved 8 July 2022, from https://unsplash.com/photos/W1TOhhlbQpw
+16. Unsplash. 2019. Images by Lena Mytchyk. Retrieved 8 July 2022, from https://unsplash.com/photos/Rejlvd47WjI
+17. Unsplash. 2018. Images by Henry Be. Retrieved 8 July 2022, from https://unsplash.com/photos/_y5CCcYWTjU
+18. Unsplash. 2021. Images by Slashio Photography. Retrieved 8 July 2022, from https://unsplash.com/photos/T5KPTbbK-_E
+19. Unsplash. 2019. Images by Brooke Lark. Retrieved 8 July 2022, from https://unsplash.com/photos/V4MBq8kue3U
+20. Unsplash. 2020. Images by David Holifield. Retrieved 8 July 2022, from https://unsplash.com/photos/9pUZ5UdOMNw
+21. Unsplash. 2017. Images by Michael Dam. Retrieved 8 July 2022, from https://unsplash.com/photos/mEZ3PoFGs_k
+22. Unsplash. 2019. Images by Leilani Angel. Retrieved 8 July 2022, from https://unsplash.com/photos/K84vnnzxmTQ
+23. Unsplash. 2021. Images by Derick McKinney. Retrieved 8 July 2022, from https://unsplash.com/photos/bBuUjB98PPY
+24. Unsplash. 2020. Images by Jeffery Erhunse. Retrieved 8 July 2022, from https://unsplash.com/photos/vp9mRauo68c
+-->
