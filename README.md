@@ -25,8 +25,8 @@ The git clone command can be used to install this respository to your local mach
 
 * Next, open the terminal or command prompt and clone the repository using the git clone command followed by the https link as shown below.
 This will create an "Online-Store" folder containing all the files belonging to this repository.
-```git clone
-https://github.com/KuvashneeNaidoo/Online-Store.git 
+```
+git clone https://github.com/KuvashneeNaidoo/Online-Store.git 
 ``` 
 * You also have the option of clicking on the green "Code" button to download a zip folder of all the files.
 
@@ -37,10 +37,10 @@ https://github.com/KuvashneeNaidoo/Online-Store.git
 * Once on the Catalogue page, you can add items to the shopping cart or click on the "View More" button to access the description of the product. 
 ![Catalogue(view or add)](https://user-images.githubusercontent.com/105747929/179355775-89654087-5f1b-474d-99a8-e605096a316f.png)
 
-* On the product description page, you can also add the item to your shopping cart. 
+* On the product description page, you are also able to add the item to your shopping cart. An animated drop-down menu can be found on this page.  
 ![Product description (add to cart)](https://user-images.githubusercontent.com/105747929/179355880-0f9eb6e5-3df3-4c71-8032-7b1db2dec180.png)
 
-* The shopping cart table will display all items you have added into your cart. You also have the option of increasing the quantity of the specific item you have chosen as well as removing items from your cart.
+* On the right end corner, click on the shopping cart icon to access this shopping cart table. This table will display all the items you have added to your cart. You also have the option of increasing the quantity of the specific item you have chosen as well as removing items from your cart.
 ![Shopping cart table](https://user-images.githubusercontent.com/105747929/179355908-c9fb30f9-3f64-4d3d-afb6-fc9e58bcc43a.png)
 
 * The summary of your order will calculate and display the VAT, delivery costs, discounts and overall total for the items in your cart.
