@@ -1,4 +1,4 @@
-# E-commerce Store
+# Online Store
 
 ## Capstone Project II using HTML, CSS and JavaScript
 
