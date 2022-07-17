@@ -3,9 +3,9 @@
 ## Capstone Project II using HTML, CSS and JavaScript
 
 ## Description 
-This responsive E-commerce store was created using HTML, CSS and Javascript languages as well as the Bootstrap framework. 
+This responsive E-commerce store was created using HTML, CSS and Javascript languages. 
 
-The project includes a Home, About Us, Catalogue, Reviews and Shopping Cart page together with 8 product description pages. All pages have been structured and styled using HTML, CSS and Bootstrap. Javascript was used to add functionality to this online bakery by allowing users to add or remove items from their shopping cart. The user can also view what items are in their cart as well as its price, whilst also being able to calculate the VAT, discounts and delivery price in order to determine the overall cost of the purchase being made. Alerts are created informing the user of their current total as well as when their order has been successfully confirmed of which they are provided with a unique reference number. Additionally, jQuery was applied displaying functions from animation and chained effects to hiding and showing content.
+The project includes a Home, About Us, Catalogue, Reviews and Shopping Cart page together with 8 product description pages. All pages have been structured and styled using HTML and CSS. Javascript was used to add functionality to this online bakery by allowing users to add or remove items from their shopping cart. The user can also view what items are in their cart as well as its price, whilst also being able to calculate the VAT, discounts and delivery price in order to determine the overall cost of the purchase being made. Alerts are created informing the user of their current total as well as when their order has been successfully confirmed of which they are provided with a unique reference number. Additionally, jQuery was applied displaying functions from animation and chained effects to hiding and showing content.
 
 ## Table of Contents
 <details open="open">
